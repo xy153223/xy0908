@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - xiaohe
+- name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 149.104.109.17
-  port: 2087
-  uuid: 9ed3dcb3-b71a-4ae1-8210-95e33615d7e6
+  server: 172.67.158.34
+  port: 443
+  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
   network: ws
   ws-opts:
-    path: /04461917b179
+    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
     headers:
-      Host: 149.104.109.17
+      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇨🇿 CZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
