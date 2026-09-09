@@ -6,17 +6,16 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 193.233.217.22
-  port: 4100
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 193.233.217.22
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+  servername: ya.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: 45.9.15.206
@@ -30,7 +29,7 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: ru05.abvpn.ru
+      Host: 45.9.15.206
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 45.9.15.206
@@ -44,7 +43,7 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: 45.9.15.206
+      Host: ru05.abvpn.ru
 proxy-groups:
 - name: PROXIES
   type: select
