@@ -17,6 +17,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   type: vmess
   server: 152.67.8.205
   port: 80
@@ -28,16 +35,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  type: ss
-  server: 139.84.166.47
-  port: 8388
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
