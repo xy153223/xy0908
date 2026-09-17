@@ -20,21 +20,19 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  type: vmess
-  server: 47.83.19.148
+  type: vless
+  server: 43.159.4.80
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /episode/files?ed=2560fp=chrome
     headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
