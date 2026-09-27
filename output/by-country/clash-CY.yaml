@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 03 - xiaohe
   type: vless
   server: 194.76.154.31
@@ -39,8 +39,21 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 04 - xiaohe
+  type: vless
+  server: www.csgo.net
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: museai.sofurry.dpdns.org
+- name: 🇨🇾 CY 05 - xiaohe
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -51,7 +64,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: random
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +74,7 @@ proxy-groups:
   - 🇨🇾 CY 02 - xiaohe
   - 🇨🇾 CY 03 - xiaohe
   - 🇨🇾 CY 04 - xiaohe
+  - 🇨🇾 CY 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +84,6 @@ proxy-groups:
   - 🇨🇾 CY 02 - xiaohe
   - 🇨🇾 CY 03 - xiaohe
   - 🇨🇾 CY 04 - xiaohe
+  - 🇨🇾 CY 05 - xiaohe
 rules:
 - MATCH,PROXIES
