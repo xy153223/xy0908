@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - xiaohe
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   type: vless
-  server: 85.90.196.11
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 162.159.24.131
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
   network: ws
   ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
+    path: ?ed=2560security=tls
     headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
